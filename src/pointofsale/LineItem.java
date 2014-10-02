@@ -12,15 +12,19 @@ package pointofsale;
  */
 public class LineItem {
     
+    private Product product1;
     private int quantity;
-    private String unitId;
+    
     //private double price;
 
     public LineItem(String unitId, int quantity) {
         this.quantity = quantity;
-        this.unitId = unitId;
+        this.nextUnit(unitId);
     }
 
+    private void nextUnit(String unitId){
+        product1 = new Product(unitId);
+    }
     public int getQuantity() {
         return quantity;
     }
@@ -30,7 +34,7 @@ public class LineItem {
     }
     
     
-    Product P1 = new Product();
+    
     
 //    private void addToArray(final LineItem item) {
 //        // needs validation

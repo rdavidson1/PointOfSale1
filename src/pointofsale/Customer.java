@@ -13,10 +13,6 @@ package pointofsale;
 public class Customer {
     
     private String customerId;
-
-    
-    
-    
     private String fName;
     private String lName;
     
@@ -24,6 +20,10 @@ public class Customer {
 public Customer(String customerId) {
         this.customerId = customerId;
     }
+
+
+
+
     
     public String getCustomerId() {
         return customerId;

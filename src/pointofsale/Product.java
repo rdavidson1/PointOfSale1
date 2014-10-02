@@ -15,6 +15,10 @@ public class Product {
 //    private double discount1;
     
     private String unitId;
+
+    public Product(String unitId) {
+        this.unitId = unitId;
+    }
     private double unitPrice;
     private String unitDescription;
 

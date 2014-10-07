@@ -15,6 +15,7 @@ public class Receipt {
     private Customer customer1;
     private LineItem lineItem1;
     private Store store1;
+    private LineItem[] lineItems;
     
 
 
@@ -24,7 +25,7 @@ public class Receipt {
 //       
     }
     
-    private void nextLineItem(String unitId, int quantity){
+    public void nextLineItem(String unitId, int quantity){
         lineItem1 = new LineItem(unitId, quantity);
     }
     private void nextCustomer(String customerId){

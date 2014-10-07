@@ -24,8 +24,12 @@ public class Register {
          receipt1 = new Receipt(customerId, unitId, quantity);
      }
     
-    public void addItem(){
+    public void addItem(String prodId, int qty){
         
-        
+        receipt1.nextLineItem(prodId, qty);
+    }
+    
+    public void endSale(){
+        receipt1.printReceipt();
     }
 }

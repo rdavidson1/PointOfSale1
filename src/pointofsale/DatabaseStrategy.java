@@ -10,6 +10,6 @@ package pointofsale;
  *
  * @author Ryan
  */
-public class FakeDatabase implements DatabaseStrategy {
+public interface DatabaseStrategy {
     
 }
